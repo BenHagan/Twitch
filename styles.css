@@ -1,0 +1,51 @@
+#content {
+  background-color: #332f32;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 3px solid white;
+}
+
+h3 {
+  color: white;
+  display: inline;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.user {
+  margin: 10px 10px 10px 0;
+}
+
+.indicator-online {
+  background: #1bf11d;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 15px 0 0 0;
+}
+
+.indicator-offline {
+  background: #e70c0c;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 15px 0 0 0;
+
+}
+
+.status {
+  font-size: 12px;
+    margin: 8px;
+    color: wheat;
+    margin-left: 50px;
+
+}
