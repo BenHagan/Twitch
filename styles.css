@@ -26,7 +26,7 @@ h3 {
 }
 
 .indicator-online {
-  background: #1bf11d;
+  background: #4ccc2b;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -34,7 +34,7 @@ h3 {
 }
 
 .indicator-offline {
-  background: #e70c0c;
+  background: #b90000;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -48,4 +48,17 @@ h3 {
     color: wheat;
     margin-left: 50px;
 
+}
+
+.btn {
+  display: inline;
+  margin-right: 5px;
+}
+
+h1 {
+  display: inline;
+}
+
+#topBar {
+  margin-top: 15px;
 }

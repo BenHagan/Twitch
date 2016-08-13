@@ -1,6 +1,19 @@
 $(document).ready(function () {
   fetchTwitchJSON(drawInterface);
-  console.log("test");
+
+  $("#all").click(function() {
+    $(".indicator-online, .indicator-offline").closest("a").show();
+    //$(".indicator-offline").closest("a").show();
+    console.log("Test");
+  });
+  $("#online").click(function(){
+    $(".indicator-offline").closest("a").hide();
+    $(".indicator-online").closest("a").show();
+  });
+  $("#offline").click(function() {
+    $(".indicator-online").closest("a").hide();
+    $(".indicator-offline").closest("a").show();
+  });
 });
 
 function fetchTwitchJSON(callback) {
@@ -19,7 +32,7 @@ function jsonCalls(i, callback) {
             "?callback=?", function(channel) {
       $.getJSON("https://api.twitch.tv/kraken/streams/" + i +
                 "?callback=?", function(stream) {
-                  console.log(stream);
+                  //console.log(stream);
                   callback(channel, stream);
       });
   });
