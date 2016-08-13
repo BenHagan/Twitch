@@ -1,5 +1,7 @@
 #content {
   background-color: #332f32;
+  padding: 3 0 10 12;
+  margin: 10 0 0 0;
 }
 
 .logo {
@@ -45,10 +47,9 @@ h3 {
 
 .status {
   font-size: 12px;
-    margin: 8px;
     color: wheat;
-    margin-left: 50px;
-
+    margin-left: 60px;
+    margin-top: -13px;
 }
 
 .btn {
@@ -58,8 +59,16 @@ h3 {
 
 h1 {
   display: inline;
+  font-family: 'Exo', sans-serif;
 }
 
-#topBar {
+#top-bar {
   margin-top: 15px;
+  position: relative;
+}
+
+#buttons {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

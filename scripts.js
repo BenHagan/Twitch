@@ -49,12 +49,15 @@ function drawInterface(channel, stream) {
     var streamingTitle = "";
     if(stream.stream != null) {
       indicatorClass = "indicator-online";
-      streamingTitle = stream.stream.channel.status;
+      streamingTitle = "<div class='status'>" + stream.stream.channel.status + "</div>";
+    }
+    else {
+      streamingTitle = "";
     }
     if(channel.status === 422) {
-      streamingTitle = "Account Closed";
+      streamingTitle = "<div class='status'>Account Closed</div>";
       logo = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Question_Mark.svg/2000px-Question_Mark.svg.png";
     }
-    var html = "<a href='" + channel.url +"' target='_blank'><div class='row user'><img class='logo' src='" + logo + "'><h3>" + displayName + "</h3>" + "<div class='pull-right " + indicatorClass + "'></div><div class='status'>" + streamingTitle  + "</div></div></a>";
+    var html = "<a href='" + channel.url +"' target='_blank'><div class='row user'><img class='logo' src='" + logo + "'><h3>" + displayName + "</h3>" + "<div class='pull-right " + indicatorClass + "'></div>" + streamingTitle  + "</div></a>";
     $("#content").append(html);
 }
